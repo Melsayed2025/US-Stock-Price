@@ -13,7 +13,7 @@ export default function StockCard({ stock }) {
           <h2 className="company-name">{symbol}</h2>
           <p className="stock-symbol-sub">{stock.exchange || "Market"}</p>
         </div>
-        {/* جعل اللون ديناميكي حسب الصعود أو الهبوط */}
+       
         <div className={isPositive ? "price-badge-green" : "price-badge-red"}>
           {isPositive ? "+" : ""}{changePercent}%
         </div>

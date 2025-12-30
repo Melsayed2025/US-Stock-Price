@@ -19,18 +19,18 @@ export default function Home() {
       <main className="hero-container">
      
         <div className="hero-text">
-          <h1>Track Egyptian Stock <br /> Prices Instantly</h1>
+          <h1>Track us Stock <br /> Prices Instantly</h1>
           <p>
-            Get real-time updates on Egyptian stock market prices. Search
+            Get real-time updates on us stock market prices. Search
             for any stock symbol and monitor daily changes, highs, and lows.
           </p>
 
           <div className="search-section">
-            {/* مكون البحث مع توجيه لصفحة التفاصيل */}
+           
             <SearchBar onSearch={(symbol) => navigate(`/stock/${symbol}`)} />
           </div>
 
-          {/* الأيقونات الثلاثة أسفل البحث كما في الصورة 1 */}
+        
           <div className="features-row">
             <div className="feature">
               <div className="icon-bg blue-bg">📈</div>
