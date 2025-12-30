@@ -1,20 +1,50 @@
-<<<<<<< HEAD
-# React + Vite
+# 📈 Stock Price Tracker (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application built with **React + Vite** that allows users to search and track stock prices in near real-time using a Time Series stock API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔍 Search for any stock by its symbol (e.g. AAPL, TSLA)
+- ⏱️ Displays latest price using 1-minute interval data
+- 📊 Shows Open, High, Low, Close, and Volume
+- 🧩 Clean, component-based architecture
+- ⚡ Fast performance powered by Vite
+- 🌍 Supports global stock markets (NASDAQ, NYSE, etc.)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# US-Stock-Price
->>>>>>> c6d3881a1a28d62c2e29ac1e08e66d9e79bffff5
+- **React**
+- **Vite**
+- **Axios**
+- **React Router DOM**
+- **External Stock Market API**
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── api/
+│   ├── api.js               # Axios instance (baseURL, token, headers)
+│   └── stock.service.js     # Stock API service (business logic)
+│
+├── components/
+│   ├── Header.jsx
+│   ├── SearchBar.jsx
+│   └── StockCard.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   └── StockDetails.jsx
+│
+├── assets/
+│   └── stock-hero.png
+│
+├── App.jsx
+├── main.jsx
+└── index.css
